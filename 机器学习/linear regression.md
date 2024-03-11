@@ -47,7 +47,7 @@ y's = 输出变量或 <font color=red>标签</font></br>
 
 在接下来的任务中，我们需要首先预设定假设函数的形式。</br>
 
-一种可能的表达方式为${{h _ \theta}(x) = {\theta _0} + {\theta _1}x}$
+一种可能的表达方式为${{h _ \theta}(x) = {\theta _ 0} + {\theta _ 1}x}$
 
 
 ![单变量线性回归的假设](./img/hypothes.png)
