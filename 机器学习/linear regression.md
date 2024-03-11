@@ -80,33 +80,33 @@ ${J(\theta)}= \frac{{({h_ \theta}(x_1)-{y_1})^2} + {({h_ \theta}(x_2)-{y_2})^2}+
 上式是3个样本时的公式。
 对于总数为m个样本，则可以用如下形式表述:
 
-${J(\theta)}= \frac{({h_ \theta}(x_1)-{y_1})^2 +{({h_ \theta}(x _2)-{y _2})
-^2}+{({h_ \theta}(x_m)-y_m)^2}}{2m}$
+${J(\theta)}= \frac{{({h_ \theta}(x_1)-{y_1})^2} + {({h_ \theta}(x_2)-{y_2})^2}+...+{({h_ \theta(x _m)}-{y_m})^2}}{2m}$
 
 </br>
 最后我们可以总结此公式为更标准的形式:
 
- ${J(\theta)}=\frac{1}{2m}\sum\limits_{i=1}^{m}(h_ \theta(x ^{(i)})-y^{(i)})^2$
+${J(\theta)}=\frac{1}{2m}\sum\limits_{i=1}^{m}(h_ \theta(x ^{(i)})-y^{(i)})^2$
 
+</br>
 ${J(\theta)}$又称之为**代价函数(cost function)**，也可称之为损失函数。在不同的机器学习问题中，损失函数的选择有所不同。在这里，线性回归问题中，选择的损失函数为上述公式，即均方误差函数，是最为合理的选择。
 
 
 ### 6.代价函数的直观理解
 
-对于我们这里所说的房价问题，假设函数包含了两个参数$\theta _1$和$\theta _2$，因此，我们这里的代价函数${J(\theta)}$应当写为 ${J(\theta_1,\theta_2)}$。</br>
+对于我们这里所说的房价问题，假设函数包含了两个参数$\theta _1$和$\theta _2$，因此，我们这里的代价函数${J(\theta)}$应当写为${J(\theta _1,\theta _2)}$
 
-由于 ${J(\theta_1,\theta_2)}$的函数图像太过复杂，我们这里继续简化假设函数$h_ \theta(x)$，由原先的:
+由于${J(\theta _1,\theta _2)}$的函数图像太过复杂,我们这里继续简化假设函数${{h _ \theta}(x)}$。
+</br>
 
-$h_ \theta(x)= \theta _0 + \theta _1 x$
-化简为 
-$h_\theta (x) = \theta_1x$
-此时模型的参数仅含有$\theta _1$，代价函数$J(\theta)$表达式为:
-
-
-$J(\theta_1)=\frac{1}{2m} \sum\limits_{i=1}^{m}(h_ \theta(x^{(i)})-y^{(i)})^2$
-
+由原先的:${{h _ \theta}(x)}={\theta _0}+{\theta _1}x$ 化简为${h _ \theta(x)} = {\theta _1x}$
+此时模型的参数仅含有${\theta _ 1}$,代价函数$J(\theta)$表达式为:</br>
+$J(\theta _ 1)=\frac{1}{2m}\sum\limits _ {i=1}^{m}({h _ \theta(x^{(i)})}-{y^{(i)}})^2$
 
 ![cost](./img/cost_3.png)
 
+
+<!-- 由于markdown转latex pdf输出有问题,下标_ 需要在前面和后面都进行空格-->
+
+
 我们在机器学习的目标就是通过机器学习最小化代价函数，下面将说明为何要最小化代价函数：
-当$\theta_1 = 1$时,
+当${\theta_1 = 1}$时,
