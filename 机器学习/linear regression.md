@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # 线性回归
 <font color=red>线性回归(Linear regression)</font>是一种利用线性函数对自变量(特征)和因变量(标签)之间的关系进行建模的方法。在线性回归中，自变量x可以是任何值，但是标签必须是数值(1.2345，890 ...),而非逻辑数(是或不是，有时也用1或0布尔值表示逻辑)。
 ## 一.从房价问题开始
@@ -48,7 +47,7 @@ y's = 输出变量或 <font color=red>标签</font></br>
 
 在接下来的任务中，我们需要首先预设定假设函数的形式。</br>
 
-一种可能的表达方式为${{h _ \theta}(x) = {\theta _ 0} + {\theta _ 1}x}$
+一种可能的表达方式为$`{{h _ \theta}(x) = {\theta _ 0} + {\theta _ 1}x}`$
 
 
 ![单变量线性回归的假设](./img/hypothes.png)
